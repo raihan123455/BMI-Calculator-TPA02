@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+  </head>
+  <body>
+    <main id="container">
+      <section id="header">
+        <h1>Check your BMI</h1>
+        <p>Enter your weight and height below to check your BMI results</p>
+      </section>
+      <section id="form">
+        <section class="form_container">
+          <label for="weight">Put your weight in here (KG)</label>
+          <input
+            id="input_weight"
+            class="form_input"
+            placeholder="60"
+            type="number"
+          />
+          <p id="validation_weight">
+            <span class="danger">Weight cannot be empty</span>
+          </p>
+        </section>
+        <section class="form_container">
+          <label for="height">And your height in here (CM)</label>
+          <input
+            id="input_height"
+            class="form_input"
+            placeholder="167"
+            type="number"
+          />
+          <p id="validation_height">
+            <span class="danger">Height cannot be empty</span>
+          </p>
+        </section>
+        <button id="form_button">Calculate BMI</button>
+      </section>
+      <section id="output">
+        <p id="output_text"></p>
+      </section>
+    </main>
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>
